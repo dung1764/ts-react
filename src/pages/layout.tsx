@@ -1,6 +1,7 @@
 import Banners from '../components/Banners'
 import Nav from '../components/Nav'
 import Head from 'next/head'
+import { TimerContextProvider } from '../store/TimerContext'
 
 interface head {
     title: string
@@ -17,7 +18,9 @@ const Layout: React.FC<head> = ({ children, title }) =>
             <Nav />
             <div className="row">
                 <div className="col-8 pt-3">
-                    {children}
+                    <TimerContextProvider>
+                        {children}
+                    </TimerContextProvider>
                 </div>
                 <div className="col-4 pt-3">
                     <Banners />

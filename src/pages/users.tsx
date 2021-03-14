@@ -16,6 +16,7 @@ const Users: React.FC = () => {
     return (
         <Layout title="TS React - Users">
             <h1>User List (API)</h1>
+            <h3>Axios + useEffect + .env Path</h3>
             <ul className="list-group">
                 {userData.length > 0 && userData.map((user: user) => {
                     return (
