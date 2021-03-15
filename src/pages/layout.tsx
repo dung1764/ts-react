@@ -1,7 +1,7 @@
 import Banners from '../components/Banners'
 import Nav from '../components/Nav'
 import Head from 'next/head'
-import { TimerContextProvider } from '../store/TimerContext'
+import { TimerContextProvider } from '../store/TimerContextStore'
 
 interface head {
     title: string

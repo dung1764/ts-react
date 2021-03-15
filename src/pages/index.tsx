@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { TimerContext } from "../store/TimerContext";
-import Layout from "./layout"
 import { observer } from 'mobx-react-lite'
+import { TimerContext } from "../store/TimerContextStore";
+import Layout from "./layout"
 
 const HomePage: React.FC = observer(() => {
     const timer = useContext(TimerContext)
