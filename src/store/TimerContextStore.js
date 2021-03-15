@@ -1,7 +1,7 @@
 import { makeAutoObservable } from "mobx"
 import { createContext, useEffect } from "react"
 
-// mobx store (store and change the value)
+// mobx set store (store and change the value)
 const timer = () => makeAutoObservable(
     {
         secondsPassed: 0,
@@ -13,7 +13,7 @@ const timer = () => makeAutoObservable(
 
 const timerStore = timer();
 
-// react use/create context (send and use the data)
+// react create context (set the data into the dom tree)
 const TimerContext = createContext(timerStore);
 
 let timerInterval;

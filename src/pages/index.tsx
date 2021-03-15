@@ -3,7 +3,9 @@ import { observer } from 'mobx-react-lite'
 import { TimerContext } from "../store/TimerContextStore";
 import Layout from "./layout"
 
+// mobx observer the data change then render the page
 const HomePage: React.FC = observer(() => {
+    // react use context (get the data from the dom tree)
     const { secondsPassed } = useContext(TimerContext)
     return (
         <Layout title="TS React">
